@@ -34,5 +34,11 @@ end
 
 
 def reverse_array(array)
-  array.reverse
+  new_array = []
+  i = array.length - 1
+  array.each do |i|
+    new_array << array[i]
+    i -= 1
+  end
+  return new_array 
 end
